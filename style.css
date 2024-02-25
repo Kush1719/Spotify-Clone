@@ -252,6 +252,7 @@ body{
 
                 &:hover{
                     scale: 1.05;
+                    cursor: pointer;
                 }
             }
         }
@@ -322,21 +323,7 @@ body{
         padding-left: 1px;
     }
     
-    #feedHeader #playlistsRecentes li button.btn {
-        width: 40px;
-        height: 40px;
-        border-radius: 25px;
-        background-color: #1ed760;
-        transition: opacity 0.3s ease;
-        opacity: 0;
-        margin-left: auto;
-    }
     
-    #feedHeader #playlistsRecentes li button.btn:hover {
-        padding: 1px;
-        border: 0;
-        transform: scale(1.05);
-    }
 
     .fw-semibold-ms-3-me-auto{
         padding-left: 11px;
@@ -559,4 +546,20 @@ body{
             border-radius: 5px;
         }
     }
+}
+
+#feedHeader #playlistsRecentes li button.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #1ed760;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin-left: auto;
+}
+
+#feedHeader #playlistsRecentes li button.btn:hover {
+    padding: 1px;
+    border: 0;
+    transform: scale(1.05);
 }
