@@ -1,416 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets//icons8-spotify-24.png">
     <script src="https://kit.fontawesome.com/d879273c7c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./before.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"  />
     <title>Spotify Clone</title>
 </head>
+
 <body>
     <div class="padding-wrapper">
         <div class="box-wrapper">
-        <div class="wrapper-sidebar">
-            <div class="box1">
-                <p><i class="fa-solid fa-house"></i> Home</p>
-                <p><i class="fa-solid fa-magnifying-glass"></i> Search</p>
-            </div>
-            <div class="box2">
-                <div class="library-tag">
-                    <p><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg> <span style="font-weight: 700;">Your Library</span></p>
-                    <p><i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i></p>
+            <div class="wrapper-sidebar">
+                <div class="box1">
+                    <p><i class="fa-solid fa-house"></i> Home</p>
+                    <p><i class="fa-solid fa-magnifying-glass"></i>Search</p>
                 </div>
-                <div class="wrapper-genre-cards">
-                    <div class="genre-card">
-                        Playlist
+                <div class="box2">
+                    <div class="library-tag">
+                        <p><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                class="Svg-sc-ytk21e-0 bneLcE">
+                                <path
+                                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                                </path>
+                                <path
+                                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                                </path>
+                            </svg> <span style="font-weight: 700;">Your Library</span></p>
+                        <p><i class="fa-solid fa-plus"></i>
+                        </p>
                     </div>
-                    <div class="genre-card">
-                        Artist
-                    </div>
-                    <div class="genre-card">
-                        Albums
-                    </div>
-                </div>
-                <div class="wrapper-scroller">
-                    <div class="scroller-topper">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <div>Recents <i class="fa-solid fa-bars"></i></div>
-                    </div>
-                    <div class="wrapper-album">
-                        <div class="inside-wrapper">
-                            <div class="album-content">
-                                <img src="./assets/heart.png" alt="Heart Icon" title="Heart Icon" />
-                                <div class="inner-album">
-                                    <p style="font-weight: 600; color: #dddddc; font-size: 16px;padding-top: 20px;">
-                                        Liked Songs</p>
-                                    <h4 style="margin-top: -20px;font-weight:bold;display: flex; align-items: center; justify-content: center;">
-                                        <p>Playlist • 13 songs</p>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="album-content">
-                                <img src="./assets/street-dreams.webp" alt="/" />
-                                <div class="inner-album">
-                                    <p style="font-weight: 600; color: #dddddc; font-size: 16px;">Street Dreams</p>
-                                    <p style="margin-top: -5px;font-weight:bold;">Album • Divine</p>
-                                </div>
-                            </div>
-                            <div class="album-content">
-                                <img src="./assets/chobar.webp" title="Chobar" />
-                                <div class="inner-album">
-                                    <p style="font-weight: 600; color: #dddddc; font-size: 16px;">Chobar</p>
-                                    <p style="margin-top: -5px;font-weight:bold;">Arjan Dhillon</p>
-                                </div>
-                            </div>
-                            <div class="album-content">
-                                <img src="./assets/dhanda.webp" alt="Dhanda Image" />
-                                <div class="inner-album">
-                                    <p style="font-weight: 600; color: #dddddc; font-size: 16px;">Dhanda Nyoliwala</p>
-                                    <p style="margin-top: -5px;font-weight:bold;">Artist</p>
-                                </div>
-                            </div>
-                            <div class="album-content">
-                                <img src="./assets/jordan.webp" title="Jordan Sandhu" />
-                                <div class="inner-album">
-                                    <p style="font-weight: 600; color: #dddddc; font-size: 16px;">Jordan Sandhu</p>
-                                    <p style="margin-top: -5px;font-weight:bold;">Artist</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box3">
-            <div class="top-box">
-                <div class="side-arrows">
-                    <div class="arrow-bg">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-                    <div class="arrow-bg">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div class="side-rightbar">
-                    <div class="explore-premium">Explore Premium</div>
-                    <div class="install"><i class="fa-regular fa-circle-down"></i><a href="install.html" style="text-decoration: none; color: #a4a5a5;">Install App</a></div>
-                    <div class="bell"><i class="fa-regular fa-bell"></i></div>
-                    <div class="user">K</div>
-                </div>
-            </div>
-            <div style="margin-top: 70px;">
-                <p style="font-weight: 700; font-size: 24px;">Good Morning</p>
-                <section id="feedHeader">
-                    <ul id="playlistsRecentes" class="mb-5">
-                      <li>
-                        <img src="assets/navaan.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Navaan Sandhu</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/karan.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Karan Aujla</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/prem.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Prem Dhillon</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/arjan.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Arjan Dhillon</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/diljit.jpg" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Diljit Dosanjh</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/anuv.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Anuv Jain</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                      <li>
-                        <img src="assets/arijit.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">Arijit Singh</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>        
-                      <li>
-                        <img src="assets/ar rahman.webp" alt="aabb">
-                        <span class="fw-semibold-ms-3-me-auto">A.R. Rahman</span>
-                        <button type="button" class="btn me-3" title="Button Text"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                            <path
-                              d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
-                            </path>
-                          </svg></button>
-                      </li>
-                    </ul>
-                </section>
-                <p style="font-weight: 600; font-size: 24px;">Recently Played</p>
-                <div class="card">
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/street-dreams.webp" title="Street Dreams"/>
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">STREET DREAMS</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Divine • Karan Aujla</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/bollywood.webp" alt="Bollywood" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">BOLLYWOOD TOP 50</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Hindi </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="assets/haryanvi.webp" alt="Haryanvi Music" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">NEW HITS HARYANVI</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Haryanvi Artists</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/2023.webp" title="Your Top Songs 2023"/>
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">YOUR TOP SONGS 2023</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Spotify Wrapped</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/makin.webp" title="Making Memories" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">MAKING MEMORIES</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Karan Aujla • Ikka</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <p style="font-weight: 600; font-size: 24px;"> Made for You</p>
-                <div class="card">
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/daily 1.jpg" alt="Daily Mix 1" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">Daily Mix 1</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Arjan Dhillon, Prem Dhillon, Navaan Sandhu
-                                </p>
+                    <div class="wrapper-scroller">
+                        <div class="lib-boxes">
+                            <div class="box">
+                                <p class="box-p1">Create your first playlist</p>
+                                <p class="box-p2">It's easy we'll help you</p>
+                                <button class="badge">Create playlist</button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/daily 2.jpg" title="Daily Mix 2" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">Daily Mix 2</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Karan Aujla, Sidhu Moose Wala, Shubh</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/daily 3.jpg" alt="Daily Mix 3" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">Daily Mix 3</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Pritam, DIVINE, Swanand Kirkire</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/daily 4.jpg" alt="Daily Mix 4" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">Daily Mix 4</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Sachet Tandon, Darshan Raval
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/daily 5.jpg" title="Daily Mix 5" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">Daily Mix 5</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Raj Mawer, Khasa Aala Chahar, Kaka WRLD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p style="font-weight: 600; font-size: 24px;"> Your top mixes</p>
-                <div class="card">
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/street-dreams.webp" title="Street Dreams"/>
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">STREET DREAMS</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Divine • Karan Aujla</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/bollywood.webp" alt="Bollywood" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">BOLLYWOOD TOP 50</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Hindi </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="assets/haryanvi.webp" alt="Haryanvi Music" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">NEW HITS HARYANVI</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Haryanvi Artists</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/2023.webp" title="Your Top Songs 2023"/>
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">YOUR TOP SONGS 2023</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Spotify Wrapped</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="">
-                            <img src="./assets/makin.webp" title="Making Memories" />
-                            <div class="song-detail">
-                                <p style="font-weight: 600;">MAKING MEMORIES</p>
-                                <p style="color: #a4a5a5;font-size: 14px;">Karan Aujla • Ikka</p>
+                            <div class="box">
+                                <p class="box-p1">Let's find some podcasts to follow</p>
+                                <p class="box-p2">we'll keep you updated on new episodes</p>
+                                <button class="badge">Browse podcasts</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footie">
-                <div class="foot">
-                    <div class="inner">
-                        <div>
-                            <p class="footlisthead">Company</p>
-                            <p>About</p>
-                            <p>Jobs</p>
-                            <p>For the Record</p>
+            <div class="box3">
+                <div class="top-box">
+                    <div class="side-arrows" style="display: flex">
+                        <div class="arrow-bg">
+                            <i class="fa-solid fa-chevron-left"></i>
                         </div>
-                        <div>
-                            <p class="footlisthead">Communities</p>
-                            <p>For Artists</p>
-                            <p>Developers</p>
-                            <p>Advertising</p>
-                            <p>Investors</p>
-                            <p>Vendors</p>
-                        </div>
-                        <div>
-                            <p class="footlisthead">Useful Links</p>
-                            <p>Support</p>
-                            <p>Free Mobile App</p>
+                        <div class="arrow-bg">
+                            <i class="fa-solid fa-chevron-right" style="margin-left: 12px;"></i>
                         </div>
                     </div>
-                    <div class="icon">
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-twitter"></i>
-                        <i class="bi bi-facebook"></i>
+                    <div class="side-rightbar">
+                        <div class="explore-premium">Explore Premium</div>
+                        <div class="install"><i class="fa-regular fa-circle-down"></i> Install App</div>
+                        <div class="sign-up"><a href="signup.html" style="text-decoration: none; color: #a4a5a5;">Sign Up</a></div>
+                    <div class="log-in"><a href="login.html" style="text-decoration: none; color: black;">Log In</a></div>
                     </div>
                 </div>
-                
-                </div>
-                <hr />
-                <div class="terms">
-                    <div id="hr">
-                        <hr>
+                <div style="margin-top: 70px; color: #a4a5a5;">
+                    <p style="font-weight: 600; font-size: 24px;color: white;">Spotify Playlists</p>
+                    <div class="card">
+                        <div class="cards">
+                            <div class="">
+                                <img src="./assets/street-dreams.webp" title="Street Dreams" />
+                                <div class="song-detail">
+                                    <p style="font-weight: 600;">STREET DREAMS</p>
+                                    <p style="color: #a4a5a5;font-size: 14px;">Divine • Karan Aujla</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="">
+                                <img src="./assets/bollywood.webp" alt="Bollywood" />
+                                <div class="song-detail">
+                                    <p style="font-weight: 600;">BOLLYWOOD TOP 50</p>
+                                    <p style="color: #a4a5a5;font-size: 14px;">Hindi </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="">
+                                <img src="assets/haryanvi.webp" alt="Haryanvi Music" />
+                                <div class="song-detail">
+                                    <p style="font-weight: 600;">NEW HITS HARYANVI</p>
+                                    <p style="color: #a4a5a5;font-size: 14px;">Haryanvi Artists</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="">
+                                <img src="./assets/2023.webp" title="Your Top Songs 2023" />
+                                <div class="song-detail">
+                                    <p style="font-weight: 600;">YOUR TOP SONGS 2023</p>
+                                    <p style="color: #a4a5a5;font-size: 14px;">Spotify Wrapped</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="">
+                                <img src="./assets/makin.webp" title="Making Memories" />
+                                <div class="song-detail">
+                                    <p style="font-weight: 600;">MAKING MEMORIES</p>
+                                    <p style="color: #a4a5a5;font-size: 14px;">Karan Aujla • Ikka</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <span>
-                        <p style="margin-right: 60px">© 2024 Spotify AB</p>
-                    </span>
+                </div>
+                <div class="footie">
+                    <div class="foot">
+                        <div class="inner">
+                            <div>
+                                <p class="footlisthead">Company</p>
+                                <p>About</p>
+                                <p>Jobs</p>
+                                <p>For the Record</p>
+                            </div>
+                            <div>
+                                <p class="footlisthead">Communities</p>
+                                <p>For Artists</p>
+                                <p>Developers</p>
+                                <p>Advertising</p>
+                                <p>Investors</p>
+                                <p>vendors</p>
+                            </div>
+                            <div>
+                                <p class="footlisthead">Useful Links</p>
+                                <p>Support</p>
+                                <p>Free Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <hr />
+                    <div class="terms">
+                        <div id="hr">
+                            <hr>
+                        </div>
+                        <span>
+                            <p style="margin-right: 60px;">© 2024 Spotify AB</p>
+                        </span>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    
         </div>
     </div>
-    
-    <div class="now-playing-bar">
-
-        <div class="song-detail">
-            <div class="album-content">
-                <img src="./assets/street-dreams.webp" alt="Street Dreams" />
-                <div class="inner-album">
-                    <p style="font-weight: 500; color: #dddddc; font-size: 16px;font-weight: bolder;">Tareefan</p>
-                    <p style="margin-top: -10px;font-weight: 400; font-size: 12px;">Divine, Karan Aujla </p>
-                </div>
-                <i class="fa-solid fa-heart"></i>
-            </div>
+    <div id="footer">
+        <div>
+            <p>Preview of Spotify</p>
         </div>
-        <div class="player">
-            <div class="player-icons">
-                <i class="fa-solid fa-arrows-turn-to-dots"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <div class="middle-icon"><i class="fa-solid fa-play"></i></div>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-left"></i>
-            </div>
-            <div class="player-bar">
-                <div class="">0:00</div>
-                <div class="bar"></div>
-                <div class="">3:33</div>
-            </div>
+        <div>
+            <p>Sign up to get unlimited songs and podcasts with occassional ads.
+                No credit card needed.</p>
         </div>
-        <div class="song-setting">
-            <i class="fa-regular fa-square-caret-right"></i>
-            <i class="fa-solid fa-microphone"></i>
-            <i class="fa-solid fa-layer-group"></i>
-            <i class="fa-solid fa-volume-low"></i>
-            <div class="bar"></div>
-            <i class="fa-solid fa-window-restore"></i>
-            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        <div id="signupfree">
+            <span><a href="signup.html">Sign up free</a></span>
         </div>
     </div>
 </body>
+
 </html>
