@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #121212;
+    font-family: "Figtree", sans-serif;    
+    font-style: normal;
+    color: white;
+    box-sizing: border-box;
+}
+
+#header header {
+    padding: 32px;
+    /* border: 2px solid blue; */
+}
+
+#mid {
+    /* border: 2px solid red; */
+    width: 38%;
+    margin: auto;
+    font-weight: 600;
+}
+
+#signupheading {
+    color: white;
+    font-size: 20px;
+    /* font-weight: 00; */
+    width: 58%;
+    margin: auto;
+    /* border: 2px solid white; */
+}
+
+#afterhead {
+    /* border: 2px solid green; */
+    width: 58%;
+    margin: auto;
+    margin-top: 45px 
+}
+
+#afterhead form {
+    /* border: 2px solid red; */
+    margin: 2px;
+
+}
+
+#afterhead form input {
+    padding: 7px 60px;
+    margin: 6px 0px;
+    border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#afterhead div a {
+    color: #1db954;
+    font-size: 14px;
+}
+
+#afterhead div {
+    /* display: block; */
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+/* margin: 0px 5px; */
+#afterhead div input {
+    padding: 12px 136px 10px 12px;
+    margin: 8px 0px;
+    border-radius: 2px;
+    font-size: 15px;
+    border: 2px solid #b3b3b3;
+}
+#afterhead div input:hover {
+    border-color: aliceblue;
+}
+
+#afterhead div div {}
+
+#next {
+    padding: 36px 0px;
+}
+
+#next p {
+    /* border: 3px solid green; */
+    padding: 13px 134px;
+    border-radius: 45px;
+    font-size: 16px;
+    background-color: #1ED760;
+    margin-left: 4px;
+}
+#next span:hover {
+    cursor: pointer;
+}
+
+/* FAANG */
+#faang {
+    /* border: 2px solid red; */
+    width: 58%;
+    margin: auto;
+
+}
+
+/* orline */
+#orline {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+#orline div{
+    width: 45%;
+    /* display: inline-block; */
+}
+
+#with {
+    /* border: 3px solid red; */
+}
+
+.withIn {
+    display: block;
+    border: 2px solid white;
+    padding: 7px 31px 7px 5px;
+    margin: 15px;
+    text-align: left;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.withIn a {
+    text-decoration: none;
+}
+
+#login {
+    padding: 20px 30px;
+    color: #A7A7A7;
+
+
+}
+
+#footer p {
+    font-size: 11px;
+    color: #A7A7A7;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    width: 20rem;
+}
+
+#footer p a {
+    color: #A7A7A7;
+}
+
+.alternate button{
+    padding: 15px 10px;
+    border-radius:25px;
+    display: flex;
+    font-size: 17px;
+    flex-direction: row;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.466);
+    color:white;
+    width: 91%;
+}
+.alternate button:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.alternate .google {
+    width: 1.2rem;
+    height: 1.2rem;
+    justify-content: left;
+    margin-left: 30px;
+}
+.alternate .facebook {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 30px;
+}
+.alternate .apple {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -7px;
+    margin-left: 20px;
+}
+.alternate p {
+    align-items: center;
+}
+
+.show_warning {
+    gap:40px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 20%;
+}
+.show_warnings{
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.warning i{
+    padding-right: 20px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 91rem;
+    height: 15vh;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    margin-left: -2rem;
+    padding-left: 2rem;
+}
+.logo p {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo i {
+    padding-left: 40px;
+    font-size: 40px;
+}
