@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+  
+:root {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.798),rgba(0, 0, 0, 0.875), rgba(0, 0, 0, 0.873) ,rgba(0, 0, 0, 0.957),black);
+}
+:root::-webkit-scrollbar {
+    width: 15px;
+}
+:root::-webkit-scrollbar-track {
+    background-color: rgba(17, 17, 17, 0.562);
+}
+:root::-webkit-scrollbar-thumb {
+    background-color: rgba(91, 90, 97, 0.363);
+}
+:root::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 63, 63);
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100rem;
+    height: 15vh;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    margin-left: -2rem;
+    padding-left: 2rem;
+  }
+.logo p {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    margin-right: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo i {
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: 40vw;
+    margin: 50px auto;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    border-radius: 15px;
+    align-items: center;
+    padding: 60px 40px;
+    position: relative;
+}
+.show_warning {
+    gap:40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.show_warnings{
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.heading{
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    font-weight:700;
+    padding-bottom: 40px;
+}
+.warning{
+    display:none;
+    font-size: 15px;
+    padding: 10px 20px 10px 0px;
+}
+.warning i{
+    padding-right: 20px;
+}
+.alternate{
+    padding: 20px 0 ;
+    position: relative;
+    width: 45vw;
+    margin-left: 48%;
+}
+.password_div{
+    position: relative;
+}
+.pass_hide , .pass_show{
+    position: absolute;
+    opacity: 0.65;
+    top: 12px;
+    font-size: 25px;
+    right: 45%;
+}
+
+.alternate button{
+    padding: 15px 10px;
+    border-radius:25px;
+    display: flex;
+    font-size: 17px;
+    flex-direction: row;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.466);
+    color:white;
+    width: 51%;
+}
+.alternate button:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+.alternate .google {
+    width: 1.2rem;
+    height: 1.2rem;
+    justify-content: left;
+    margin-left: 30px;
+}
+.alternate .facebook {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 30px;
+}
+.alternate .apple {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -7px;
+    margin-left: 20px;
+}
+.alternate p {
+    align-items: center;
+}
+button .bi{
+    margin:0px 25px;
+}
+
+hr{
+    margin: 10px 20px 30px 0;
+    width: 85%;
+    opacity: 0.35;
+}
+#wrong_detail{
+    color:rgb(241, 81,88);
+    display: none;
+}
+#myform{
+    position: relative;
+    font-size: 17px;
+    width: 90%;
+    align-items: center;
+    margin-left: 13vw;
+    }
+    #myform input{
+    display: block;
+    padding: 15px 10px;
+    width: 55%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+form p{
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.warn{
+    color:rgb(241, 81,88);
+}
+form button{
+    margin: 15px 0px;
+    width: 65%;
+    padding:13px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: rgb(30 ,215,96);
+    font-weight: 600;
+}
+.toggle_btn{
+    display: flex;
+}
+    
+.toggle{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-top: 25px;
+    background-color: grey;
+    border-radius: 35px;
+    }
+    .toggle:after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.859);
+        top: -0.1px;
+        left: -0.25px;
+        transition: all 0.5s;
+    }
+
+.checkbox:checked + .toggle::after {
+    left: 19.5px;
+    
+}
+.checkbox:checked + .toggle {
+    background-color: rgb(30 ,215,96);
+}
+
+.toggle_btn p{
+    margin: 15px 10px;
+}
+.toggle_btn #switch {
+    display: none;
+}
+#me{
+    padding-top: 12px;
+}
+#no_acc{
+    opacity: 0.7;
+    display: flex;
+    color: white;
+}
+
+#forgot{
+    text-decoration: underline;
+    opacity: 1;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#sign_in{
+    text-decoration: underline;
+    opacity: 1;
+    margin-top: -1px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: white;
+}
+
+.footer{
+    position: relative;
+    background-color: rgb(18,18,18);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 35px;
+    opacity: 0.7;
+    letter-spacing: 0.505px;
+}
+
+/* toggle */
+#pass[type="password"] {
+    -webkit-text-security: disc;
+}
+
+#toggle-password:checked + #pass[type="password"] {
+    -webkit-text-security: none;
+}

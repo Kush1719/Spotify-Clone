@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Spotify</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/Spotify-Icon-Black-Logo.wine.svg"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <i class="bi bi-spotify"></i>
+      <p>Spotify</p>
+    </div>
+    <div class="container">
+      <p class="heading">Log in to Spotify</p>
+      <div class="warning">
+        <i class="bi bi-exclamation-circle"></i>
+        <p>
+          You do not have a Spotify account connected to your Google Account. If
+          you have a Spotify account, please try log in with your Spotify email
+          or username. If you do not have a Spotify account, please sign up.
+        </p>
+      </div>
+      <div class="alternate">
+        <button class="show_warning">
+          <img src="assets/google icon.webp" class="google" alt="Google Icon">
+          <p>Sign in with Google</p>
+        </button>
+        <button class="show_warning">
+          <img src="assets/facebook icon.webp" class="facebook" alt="Facebook Icon">
+          <p>Sign in with Facebook</p>
+        </button>
+        <button class="show_warning">
+          <img src="assets/apple icon.png" class="apple" alt="">
+          <p>Sign in with Apple</p>
+        </button>
+        <button class="show_warnings">
+          <p>Continue with Phone Number</p>
+        </button>
+      </div>
+      <hr/>
+      <form id="myform" action="" method="">
+        <p id="wrong_detail">Username or password is incorrect</p>
+        <label for="email"><p class="label">Email or username</p></label>
+        <input id="email" type="email" placeholder="Email or username" />
+        <div class="warning">
+          <p class="warn">
+            <i class="bi bi-exclamation-circle"></i> This email is invalid. Make
+            sure it's written like example@email.com
+          </p>
+        </div>
+        <label for="pass"><p class="label">Password</p></label>
+        <div class="password_div">
+            <input id="pass" type="password" placeholder="Password" />
+            <i class="bi bi-eye-slash-fill pass_show"></i>
+        </div>
+        <div class="toggle_btn">
+          <input type="checkbox" id="switch" class="checkbox" />
+          <label for="switch" class="toggle">
+          </label>
+          <p id="me">Remember me</p>  
+        </div>
+        <button form="myform" class="submit" type="submit"><a href="index.html" id="sign_in" style="text-decoration: none; color: black">Log In</a></button>
+      </form>
+      <p id="forgot">Forgot your password?</p>
+      <hr />
+      <div id="no_acc">
+        Don't have an account?
+        <a href="signup.html" id="sign_in">Sign up for Spotify</a>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="capcha">
+        <p>This site is protected by reCAPTCHA and the Google
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;"> Privacy Policy </a>and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF;">Terms of Service</a> apply.
+      </p>
+      </p>
+    </div>
+  </body>
+</html>
