@@ -15,7 +15,7 @@ body{
     width: 100%;
 }
 .wrapper-sidebar{
-    display: flex;
+    display: grid;
     flex-direction: column;
     width: 30%;
     gap: 8px;
@@ -47,8 +47,8 @@ body{
     } 
 }
 .box2{
-    min-height: 481px;
-    display: flex;
+    min-height: 505px;
+    display: grid;
     flex-direction: column;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
@@ -67,7 +67,7 @@ body{
         width: 100%;
 
         p{
-            display: flex;
+            display: grid;
             align-items: center;
             gap: 10px;
             fill: gray;
@@ -82,15 +82,9 @@ body{
     }
     .wrapper-scroller{
         height: 100%;
-        margin: 20px 5px 0 5px;
+        margin: -50px 5px 0 5px;
         color: #a7a7a7;
         font-size: 14px;
-        
-        .scroller-topper{
-            display: flex;
-            z-index: 99;
-            justify-content: space-between;
-        }
 
         .box{
             background-color: #232323;
@@ -137,7 +131,7 @@ body{
 }
 
 .box3{  
-    min-height: 600px;
+    min-height: 623px;
     width: 89%;
     padding: 10px 20px 10px 20px;
     overflow: hidden;
@@ -146,15 +140,16 @@ body{
     }
 
     .top-box{
-        display: flex;
+        display: grid;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
         position: fixed;
 
         .side-rightbar{
-            display: flex;
+            display: grid;
             flex-direction: row;
+            grid-auto-flow: column;
             gap: 10px;
             font-family: 'Rubik', sans-serif;
             font-weight: 600;
@@ -211,7 +206,8 @@ body{
     }
 
     .card{
-        display: flex;
+        display: grid;
+        grid-auto-flow: column;
         gap: 25px;
     }
 
@@ -227,10 +223,6 @@ body{
             background-color: #282828;
             transition: 0.3s;
         }
-
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
 
         img{
             height: 160px;
@@ -255,7 +247,8 @@ body{
     background-color: #6e6d6d;
 }
 .inner{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-evenly;
     flex-direction: row;
     width: 60%;
@@ -276,7 +269,7 @@ hr{
 }
 
 .terms{
-    display: flex;
+    display: grid;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;

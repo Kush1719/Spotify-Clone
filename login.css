@@ -5,9 +5,9 @@
 }
   
 :root {
-    display: flex;
+    display: grid;
     width: 100%;
-    flex-direction: column;
+    grid-auto-flow: column;
     overflow-x: hidden;
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.798),rgba(0, 0, 0, 0.875), rgba(0, 0, 0, 0.873) ,rgba(0, 0, 0, 0.957),black);
 }
@@ -26,7 +26,8 @@
 
 .logo {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column; 
     flex-direction: row;
     align-items: center;
     width: 100rem;
@@ -42,6 +43,7 @@
     font-weight: 800;
     font-size: 24px;
     margin-right: 10px;
+    margin-left: -47rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .logo i {
@@ -189,7 +191,7 @@ form button{
     font-weight: 600;
 }
 .toggle_btn{
-    display: flex;
+    display: grid;
 }
     
 .toggle{
@@ -232,7 +234,8 @@ form button{
 }
 #no_acc{
     opacity: 0.7;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     color: white;
 }
 
